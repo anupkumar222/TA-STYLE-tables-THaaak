@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "poppins";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* custom css */
+
+/* general */
+.container-80{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-60{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    /* display: inline-block; */
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: #ed563a;
+    color: #ffffff;
+    border: none;
+}
+/* main */
+/* header */
+
+.header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    position: absolute;
+    z-index: 4;
+
+}
+header h1{
+    font-size: 26px;
+    font-weight: 700;
+}
+.active{
+    color: #ed563a;
+}
+.nav-menu-item{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+.nav-menu-item :hover{
+    color: #ed563a;
+}
+.btn :hover{
+    color: white;
+}
+    
+
+
+/* main */
+/* hero section */
+.hero{
+    width: 99vw;
+    height: 100vh;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-header{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top: 250px;
+    left: 450px;
+}
+.hero-header h2{
+    font-size: 48px;
+    font-weight: 800;
+    padding: 30px 0;
+}
+
+/* program section*/
+
+.program{
+    margin: 100px auto;
+    line-height: 1.5;
+}
+.heading{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.heading header{
+    text-align: center;
+    padding: 20px;
+}
+.heading h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.heading p{
+    color: grey;
+    line-height: 1.5;
+}
+.heading-img{
+    padding: 20px 0;
+}
+.program img{
+    padding: 20px 0;
+}
+.parent-box{
+    margin-top: 20px;
+}
+.c-box-1{
+    width: 48%;
+    text-align: start;
+}
+.program-content{
+    width: 70%;
+}
+.program-content h4{
+    font-weight: 600;
+}
+.program-content p{
+    font-size: 12px;
+    color: grey;
+    padding: 3px 0;
+}
+.program-content a{
+    font-size: 12px;
+}
+.program-content span{
+    color: #54a5ff;
+}
+
+/* member section */
+
+.member{
+    background-image: url(./assets/cta-bg.jpg);
+}
+.member-text{
+    color: white;
+    padding: 100px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+.member-text h5{
+    font-size: 48px;
+    font-weight: 800;
+}
+.member-text p{
+    color: rgb(205, 204, 204);
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+/* classes section */
+.class{
+    margin: 100px auto;
+}
+.class-p-box{
+    margin: 50px auto;
+}
+.class-c-box-1{
+    width: 35%;
+}
+.sub-box{
+    padding: 10px 30px;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px #dddbdb;
+    border-radius: 4px;
+    margin-bottom: 35px;
+}
+.sub-box span{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+}
+.view{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.class-c-box-2{
+    width: 57%;
+    height: 404px;
+    text-align: start;
+}
+.class-img img{
+    border-radius: 6px;
+}
+.class-c-box-2 header{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+.class-c-box-2 p{
+    font-size: 12px;
+    line-height: 1.5;
+    color: grey;
+}
+.class-c-box-2 button{
+    margin-top: 15px;
+}
+
+/* schedule section */
+.schedule{
+    background-image: url(./assets/schedule-bg.jpg);
+    margin: 50px auto;
+    padding: 100px 0;
+}
+.schedule header{
+    padding: 10px 0;
+}
+.schedule h3{
+    color: white;
+}
+/* table */
+
+
+.daily-routine{
+    text-align: center;
+    color: #ffffff;
+    margin: 30px 0;
+}
+.section-five .active{
+    color: #fb1212;
+}
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 20px auto;
+    color: #d8d7d7;
+}
+td,
+th{
+    border: 1px solid;
+    padding: 20px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* trainer section */
+
+.trainer-p-box{
+    margin: 80px 0;
+}
+.trainer-c-box{
+    width: 30%;
+    padding: 20px;
+    text-align: start;
+    box-shadow: 0 0 1px grey;
+    border-radius: 2px;
+}
+.trainer-c-box img{
+    border-radius: 4px;
+}
+.trainer-c-box span{
+    font-size: 10px;
+    padding: 20px 0;
+}
+.trainer-c-box h6{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.trainer-c-box p{
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+.trainer-c-box i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+/* map and contact section */
+.map{
+    width: 50%;
+}
+.message{
+    width: 50%;
+    background-image: url(./assets/contact-bg.jpg);
+    font-size: 0;
+}
+form{
+    width: 90%;
+    padding: 26px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 4px;
+    margin: 40px;
+}
+.basic{
+    width: 100%;
+}
+input{
+    padding: 8px;
+    width: 48%;
+    color: grey;
+   border: 1px solid #dddddd;
+    outline: none;
+}
+.subject{
+    width: 100%;
+    margin: 20px 0;
+}
+textarea{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    outline: none;
+    margin-bottom: 10px;
+}
+/* footer */
+.footer{
+    padding: 40px 0;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
